@@ -1,0 +1,69 @@
+baseURL = 'https://buried-pixels.github.io/'
+locale = 'en-us'
+title = 'Buried Pixels'
+theme = 'PaperMod'
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[params]
+  author = "Buried Pixels"
+  description = "Unearthing the video games that deserved better."
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowShareButtons = true
+  ShowToc = false
+  disableScrollToTop = false
+
+  [params.homeInfoParams]
+    Title = "Buried Pixels"
+    Content = "Unearthing the video games that deserved better. Reviews, ranked lists, and passionate takes on the games history forgot."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/buried-pixels"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "All Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "reviews"
+    name = "Reviews"
+    url = "/tags/review/"
+    weight = 20
+  [[menu.main]]
+    identifier = "lists"
+    name = "Top Lists"
+    url = "/tags/list/"
+    weight = 30
+  [[menu.main]]
+    identifier = "opinion"
+    name = "Opinion"
+    url = "/tags/opinion/"
+    weight = 40
+  [[menu.main]]
+    identifier = "search"
+    name = "🔍"
+    url = "/search/"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
