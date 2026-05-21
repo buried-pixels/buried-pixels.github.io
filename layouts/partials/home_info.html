@@ -1,0 +1,19 @@
+{{- with site.Params.homeInfoParams }}
+<div class="site-banner">
+    <img src="/images/Cinematic Gaming Blog Header - Buried Pixels.png"
+         alt="Buried Pixels — Unearthing the video games that deserved better"
+         style="width:100%;max-height:320px;object-fit:cover;display:block;border-radius:8px;margin-bottom:1.5rem;">
+</div>
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content md-content">
+        {{ $opts := dict "display" "block" }}
+        {{ .Content | $.Page.RenderString $opts }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}

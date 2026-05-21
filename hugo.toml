@@ -7,6 +7,11 @@ enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 
+[params.label]
+  text = "Buried Pixels"
+  icon = "/images/Eroded 'Buried Pixels' Logo with Glowing Pixels.jpg"
+  iconHeight = 35
+
 [params]
   author = "Buried Pixels"
   description = "Unearthing the video games that deserved better."
