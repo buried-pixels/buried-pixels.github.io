@@ -2,10 +2,15 @@ baseURL = 'https://buried-pixels.github.io/'
 locale = 'en-us'
 title = 'Buried Pixels'
 theme = 'PaperMod'
-paginate = 10
+pagination.pagerSize = 10
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
+
+[params.label]
+  text = "Buried Pixels"
+  icon = "/images/Eroded 'Buried Pixels' Logo with Glowing Pixels.jpg"
+  iconHeight = 35
 
 [params]
   author = "Buried Pixels"
